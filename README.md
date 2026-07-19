@@ -1,44 +1,44 @@
-# README.md
-# Home Network & Media Server Setup
+# Hi, I'm Mason 👋
 
-## Overview
-A self-hosted home server environment providing secure remote access, 
-optimized network performance, and media streaming for personal and 
-shared use.
+Senior at Chillicothe High School (Class of 2027) planning to study 
+Network/Systems Administration at the University of Central Missouri. 
+I'm currently studying for my CompTIA A+ certification and building 
+hands-on experience through self-directed homelab projects.
 
-## Goal
-To build a reliable home server that my friends and I could securely connect to 
-remotely, while improving overall home network performance and hosting 
-a self-managed media library.
+## About Me
+I'm drawn to IT and networking because I like understanding how systems 
+actually work — not just using them, but figuring out why something is 
+slow, insecure, or broken, and fixing it. Outside of tech, I play alto 
+saxophone (District Gold soloist) and do video editing and audio 
+production as creative outlets.
 
-## What I Built
-- **Remote Access:** Configured Tailscale VPN to allow secure remote 
-  connections to my home network without exposing risky open ports to 
-  the public internet.
-- **Network Optimization:** Diagnosed slow WiFi performance and split 
-  devices across 2.4GHz and 5GHz bands, cutting average ping from ~44ms 
-  to ~21ms and noticeably improving throughput.
-- **DNS Management:** Switched network-wide DNS to Cloudflare's family 
-  filter for improved security and content filtering.
-- **Media Server:** Deployed Jellyfin as a self-hosted media server, 
-  configuring direct play and hardware transcoding for smooth playback 
-  across devices.
-- **Game Server:** Built and maintain a Paper Minecraft server (1.21.1) 
-  with persistent world management, accessible remotely via Tailscale.
+## Featured Projects
 
-## Tools & Technologies
-Tailscale, Cloudflare DNS, Jellyfin, Paper Minecraft Server, Windows 
-networking configuration
+### 🔗 [Tailscale Remote Access Setup](link-to-repo)
+Solved a real cross-network game streaming problem (Apollo/Moonlight) 
+by implementing a secure mesh VPN — no open ports required.
+**Tools:** Tailscale, Apollo, Moonlight
 
-## Challenges & What I Learned
-Diagnosing the network slowdown required understanding how band 
-congestion affects WiFi performance in a multi-device household. 
-Configuring Tailscale taught me practical VPN concepts (mesh networking, 
-node authentication) beyond textbook theory. Setting up Jellyfin's 
-transcoding also required learning how codec compatibility affects 
-playback performance across different client devices.
+### 🖥️ [Home Network & Media Server](link-to-repo)
+Diagnosed and fixed slow home WiFi performance (cut ping from ~44ms to 
+~21ms), plus deployed a self-hosted Jellyfin media server with DNS 
+filtering.
+**Tools:** Cloudflare DNS, Jellyfin, network band optimization
 
-## Result
-A stable, secure home network that supports remote access, faster 
-everyday performance, and self-hosted media streaming — maintained 
-and expanded over several months of ongoing work.
+### ⛏️ [Minecraft Server Deployment](link-to-repo)
+Built and maintain a persistent Paper Minecraft server with cross-platform 
+(Bedrock/Java) support and remote access.
+**Tools:** Paper, GeyserMC, Floodgate, EssentialsX, Tailscale
+
+## Currently Learning
+- CompTIA A+ Certification
+- Basic Python scripting for sysadmin automation
+- Windows Server & virtualization fundamentals
+
+## Job Shadow Experience
+- **GreenHills Communications** — Network infrastructure and remote 
+  site operations
+- **NCMC IT Department** — Enterprise IT systems and support processes
+
+## Connect
+📫 [LinkedIn](link) | 🎓 UCM Network/Systems Administration, Fall 2027

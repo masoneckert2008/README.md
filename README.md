@@ -47,17 +47,25 @@ Designed a secure remote access solution using Tailscale to enable high-quality 
 
 Optimized my home network by reducing latency from approximately 44 ms to 21 ms through wireless band optimization and DNS improvements.
 
-Also deployed a self-hosted Jellyfin media server for local media streaming while learning about transcoding, media libraries, and self-hosted services.
+Also deployed a self-hosted Jellyfin media server for local media streaming, going beyond basic setup to research and evaluate playback quality, client options, and streaming behavior in depth:
+
+* **Media player comparison:** Tested MPV, VLC, and MPC-HC (with madVR) to find the best local playback experience — landed on MPV after finding MPC-HC/madVR conflicted with my display's ICC color profile.
+* **Client app comparison:** Evaluated multiple Jellyfin client apps for iPhone and Android TV/Google TV — including Moonfin, Wholphin, Findroid, and the official Jellyfin app — comparing UI quality, stability, and TV-navigation design to find the best fit for each device.
+* **Transcoding vs. direct play research:** Studied how Jellyfin decides between direct play and server-side transcoding based on client codec support and network conditions, and configured my setup to maximize direct play (better quality, lower server load) while ensuring transcoding worked reliably as a fallback for less capable devices.
 
 **Skills Demonstrated**
 * Wi-Fi optimization
 * DNS configuration
 * Network troubleshooting
 * Self-hosting
+* Media playback & codec research
+* Client/app evaluation and comparison testing
 
 **Tools**
 * Cloudflare DNS
 * Jellyfin
+* MPV / VLC / MPC-HC
+* Moonfin, Wholphin, Findroid (Jellyfin clients)
 
 ---
 
@@ -77,6 +85,27 @@ Built and maintain a persistent Paper Minecraft server supporting both Java and 
 * Floodgate
 * EssentialsX
 * Tailscale
+
+---
+
+### 🎧 Personal Audio Tuning & EQ Engineering
+
+Researched and applied practical audio engineering principles to improve sound quality across multiple headphones and use cases, going beyond default settings to build a genuinely tuned listening setup.
+
+* **EQ target research:** Investigated audio tuning targets (including the Harman curve and community-tested alternatives like Oluv's targets), testing them against my own hearing rather than assuming a "standard" target is universally correct — found the Harman curve too thin/harsh for my ears, while an Oluv-based target on budget headphones outperformed factory Harman tuning on more expensive ones.
+* **Convolver vs. parametric EQ:** Built separate EQ profiles for different use cases — a convolver-based profile for critical music listening, and a parametric EQ profile for gaming — understanding the tradeoffs between the two approaches (precision vs. flexibility/CPU load).
+* **Audio chain evaluation:** Compared onboard motherboard audio, USB DAC options, and different headphones (semi-open vs. closed-back, budget vs. higher-end) to understand where the actual bottlenecks in an audio chain are, and made informed decisions about where upgrades would (and wouldn't) meaningfully improve sound quality.
+
+**Skills Demonstrated**
+* Audio signal processing concepts (EQ, convolution, parametric filtering)
+* Critical listening & A/B testing methodology
+* Research-driven decision-making (evaluating claims against real-world testing)
+* Audio hardware chain troubleshooting
+
+**Tools**
+* Peace (parametric EQ)
+* Convolver-based EQ software
+* EasyEffects (Linux)
 
 ---
 

@@ -14,7 +14,7 @@ production as creative outlets.
 
 ## Featured Projects
 
-### 🔗 [Tailscale Remote Access Setup](link-to-repo)
+### 🔗 [Tailscale Remote Access Setup][(link-to-repo)](https://github.com/masoneckert2008/README.md/blob/6da77f21d445438ec3dc2f284479dda52cfd5cfc/Tailscale%20Remote%20Access%20Setup)
 Solved a real cross-network game streaming problem (Apollo/Moonlight) 
 by implementing a secure mesh VPN — no open ports required.
 **Tools:** Tailscale, Apollo, Moonlight

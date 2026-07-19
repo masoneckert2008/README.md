@@ -1,0 +1,45 @@
+# Tailscale Remote Access Setup
+
+## Overview
+Configuring secure remote access to my home gaming PC using Tailscale, solving connectivity problems with Apollo (Sunshine Fork)/Moonlight game streaming 
+across different networks.
+
+## The Problem
+I wanted to use Apollo (host) and Moonlight (client) to stream games 
+from my gaming PC to another device, but ran into a wall: Apollo/Moonlight 
+are built for local network streaming by default. When I tried to connect 
+from a different household on a completely different WiFi network, it 
+wouldn't connect — my PC wasn't reachable outside my home network.
+
+## The Solution
+I researched options for connecting two devices across different networks 
+without the risks of opening my network's ports to the public internet, and found 
+Tailscale — a mesh VPN service that creates a secure, private network 
+between devices I control with my email, regardless of their physical location or 
+which WiFi they're on.
+
+## What I Did
+- Installed Tailscale on my host gaming PC and the remote client device
+- Authenticated both devices (my iPhone 14) under the same Tailscale network
+- Configured Apollo/Moonlight to connect using the Tailscale-assigned 
+  IP address instead of a local network IP
+- Tested and found a decently stable game streaming access from an entirely 
+  different household's network
+
+## Tools & Technologies
+Tailscale, Apollo, Moonlight, Windows networking
+
+## Challenges & What I Learned
+The core challenge was understanding *why* local streaming tools fail 
+across networks in the first place — different networks use different, 
+private IP ranges that can't communicate outside the router, and there's no direct path between 
+them without something bridging the connection. Setting this up taught 
+me the basics of mesh VPN concepts: how Tailscale creates secure 
+point-to-point connections between devices without needing traditional 
+port forwarding or a static public IP, which is normally a much more a
+complex and less secure way to solve the same problem. I also saw how powerful this tool is for large companies, as it uses enterprise-grade WireGuard.
+
+## Result
+Reliable, secure remote game streaming access to my PC from any network, 
+without exposing any ports publicly. Later expanded to give a friend 
+shared access to the same setup.
